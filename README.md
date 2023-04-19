@@ -22,41 +22,41 @@ It’s the first task of the process. In this task, the customer interacts with 
 
 ```json
 {
-	"menu": {
-		"flavors": [
-			{
-				"img": "dummyPath/pepperoni.png",
-				"flavor": "pepperoni",
-				"id": "a985d2f2756b79bf7f0ad4ec4400da940d88bdc5",
-				"ingredients": ["pepperoni", "mussarela", "molho de tomate"],
-				"description": "Uma das pizzas mais populares do país.",
-				"sizes": [
-					{ "tag": "pequeno", "price": 12.75, "dim": "25 cm" },
-					{ "tag": "médio", "price": 17.98, "dim": "30 cm" },
-					{ "tag": "grande", "price": 23.42, "dim": "35 cm" },
-					{ "tag": "família", "price": 28.85, "dim": "40 cm" },
-					{ "tag": "grande família", "price": 40.21, "dim": "45 cm" }
-				],
-				"edges": ["chocolate", "cheddar", "catupiry"]
-			},
-			{
-				"img": "dummyPath/extracheese.png",
-				"flavor": "extra cheese",
-				"id": "41e460faa981f5dca1fb7b59b764b3ba59959071",
-				"ingredients": ["mussarela", "orégano", "molho de pizza"],
-				"description": "Uma pizza 100% de mussarela.",
-				"sizes": [
-					{ "tag": "pequeno", "price": 11.45, "dim": "25 cm" },
-					{ "tag": "médio", "price": 16.78, "dim": "30 cm" },
-					{ "tag": "grande", "price": 21.52, "dim": "35 cm" },
-					{ "tag": "família", "price": 27.53, "dim": "40 cm" },
-					{ "tag": "grande família", "price": 38.56, "dim": "45 cm" }
-				],
-				"edges": ["chocolate", "cheddar", "catupiry"]
-			},
-			...
-		]
-	}
+    "menu": {
+        "flavors": [
+            {
+                "img": "dummyPath/pepperoni.png",
+                "flavor": "pepperoni",
+                "id": "a985d2f2756b79bf7f0ad4ec4400da940d88bdc5",
+                "ingredients": ["pepperoni", "mussarela", "molho de tomate"],
+                "description": "Uma das pizzas mais populares do país.",
+                "sizes": [
+                    { "tag": "pequeno", "price": 12.75, "dim": "25 cm" },
+                    { "tag": "médio", "price": 17.98, "dim": "30 cm" },
+                    { "tag": "grande", "price": 23.42, "dim": "35 cm" },
+                    { "tag": "família", "price": 28.85, "dim": "40 cm" },
+                    { "tag": "grande família", "price": 40.21, "dim": "45 cm" }
+                ],
+                "edges": ["chocolate", "cheddar", "catupiry"]
+            },
+            {
+                "img": "dummyPath/extracheese.png",
+                "flavor": "extra cheese",
+                "id": "41e460faa981f5dca1fb7b59b764b3ba59959071",
+                "ingredients": ["mussarela", "orégano", "molho de pizza"],
+                "description": "Uma pizza 100% de mussarela.",
+                "sizes": [
+                    { "tag": "pequeno", "price": 11.45, "dim": "25 cm" },
+                    { "tag": "médio", "price": 16.78, "dim": "30 cm" },
+                    { "tag": "grande", "price": 21.52, "dim": "35 cm" },
+                    { "tag": "família", "price": 27.53, "dim": "40 cm" },
+                    { "tag": "grande família", "price": 38.56, "dim": "45 cm" }
+                ],
+                "edges": ["chocolate", "cheddar", "catupiry"]
+            },
+            ...
+        ]
+    }
 }
 ```
 
@@ -64,15 +64,15 @@ It’s the first task of the process. In this task, the customer interacts with 
 
 ```json
 {
-	"order": {
-		"flavors": [
-			{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-			"price": 12.75, "comment": null },
-			{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-			"price": 27.53, "comment": "Por favor, capriche no orégano." }
-		],
-		"total_price": 53.03
-	}
+    "order": {
+        "flavors": [
+            { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+            "price": 12.75, "comment": null },
+            { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+            "price": 27.53, "comment": "Por favor, capriche no orégano." }
+        ],
+        "total_price": 53.03
+    }
 }
 ```
 
@@ -88,15 +88,15 @@ In this task, the customer performs the order payment. For this, all the order d
 
 ```json
 {
-	"order": {
-		"flavors": [
-			{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-			"price": 12.75, "comment": null },
-			{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-			"price": 27.53, "comment": "Por favor, capriche no orégano." }
-		],
-		"total_price": 53.03
-	}
+    "order": {
+        "flavors": [
+            { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+            "price": 12.75, "comment": null },
+            { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+            "price": 27.53, "comment": "Por favor, capriche no orégano." }
+        ],
+        "total_price": 53.03
+    }
 }
 ```
 
@@ -104,7 +104,7 @@ In this task, the customer performs the order payment. For this, all the order d
 
 ```json
 {
-	"payment_status": "PAY"
+    "payment_status": "PAY"
 }
 ```
 
@@ -118,7 +118,7 @@ Based on the result of the operations related to the order’s payment, this tas
 
 ```json
 {
-	"payment_status": true
+    "payment_status": true
 }
 ```
 
@@ -126,7 +126,7 @@ Based on the result of the operations related to the order’s payment, this tas
 
 ```json
 {
-	"payment_status": true
+    "payment_status": true
 }
 ```
 
@@ -140,17 +140,17 @@ In this task occurs the preparation of the order by the pizzeria. This task need
 
 ```json
 {
-	"order": {
-		"customer": {
-			"name": "Dummy Customer"
-		},
-		"flavors": [
-			{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-			"comment": "" },
-			{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-			"comment": "Por favor, capriche no orégano." }
-		]
-	}
+    "order": {
+        "customer": {
+            "name": "Dummy Customer"
+        },
+        "flavors": [
+            { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+            "comment": "" },
+            { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+            "comment": "Por favor, capriche no orégano." }
+        ]
+    }
 }
 ```
 
@@ -166,21 +166,21 @@ In this task the deliveryman dispatches the order to the customer. Once the paym
 
 ```json
 {
-	"order": {
-		"customer": {
-			"name": "Dummy Customer",
-			"phone": "(459) 1133909"
-		},
-		"address": {
-			"district": "Dummy District",
-			"street": "Dummy street",
-			"number": "4152"
-		},
-		"flavors": [
-			{ "size": "pequeno", "qty": 2 },
-			{ "size": "família", "qty": 1 }
-		]
-	}
+    "order": {
+        "customer": {
+            "name": "Dummy Customer",
+            "phone": "(459) 1133909"
+        },
+        "address": {
+            "district": "Dummy District",
+            "street": "Dummy street",
+            "number": "4152"
+        },
+        "flavors": [
+            { "size": "pequeno", "qty": 2 },
+            { "size": "família", "qty": 1 }
+        ]
+    }
 }
 ```
 
@@ -196,20 +196,20 @@ In this task, the customer can request for a refund in case of the delivery time
 
 ```json
 {
-	"order": {
-		"flavors": [
-			{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-			"comment": "" },
-			{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-			"comment": "Por favor, capriche no orégano." }
-		],
-		"delivery_time": {
-			"time": 63,
-			"exceeded": true,
-			"refund_value": 2.83
-		},
-		"total_price": 53.03
-	}
+    "order": {
+        "flavors": [
+            { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+            "comment": "" },
+            { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+            "comment": "Por favor, capriche no orégano." }
+        ],
+        "delivery_time": {
+            "time": 63,
+            "exceeded": true,
+            "refund_value": 2.83
+        },
+        "total_price": 53.03
+    }
 }
 ```
 
@@ -217,7 +217,7 @@ In this task, the customer can request for a refund in case of the delivery time
 
 ```json
 {
-	"refund": true
+    "refund": true
 }
 ```
 
@@ -231,8 +231,8 @@ In this task the customer is notified about the refund. A notification is presen
 
 ```json
 {
-	"refund_ok": true,
-	"voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
+    "refund_ok": true,
+    "voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
 }
 ```
 
@@ -248,19 +248,19 @@ In this task the customer rates the service based in his experience with the ord
 
 ```json
 {
-	"order": {
-		"flavors": [
-			{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-			"comment": null },
-			{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-			"comment": "Por favor, capriche no orégano." }
-		],
-		"delivery_time": {
-			"time": 63,
-			"exceeded": true,
-			"refund_value": 2.83
-		}
-	}
+    "order": {
+        "flavors": [
+            { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+            "comment": null },
+            { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+            "comment": "Por favor, capriche no orégano." }
+        ],
+        "delivery_time": {
+            "time": 63,
+            "exceeded": true,
+            "refund_value": 2.83
+        }
+    }
 }
 ```
 
@@ -268,11 +268,11 @@ In this task the customer rates the service based in his experience with the ord
 
 ```json
 {
-	"rating": {
-		"rate": 4,
-		"comment": "A entrega demorou um pouco, mas o cheiro estava tão bom quando chegou aqui
-		que eu não pude resistir! :)"
-	}
+    "rating": {
+        "rate": 4,
+        "comment": "A entrega demorou um pouco, mas o cheiro estava tão bom quando chegou aqui
+        que eu não pude resistir! :)"
+    }
 }
 ```
 
@@ -286,14 +286,14 @@ In this task the data required to populate the pizza menu is retrieved and retur
 
 ```json
 { 
-	"parameters": {
-		"input": {}, 
-		"request": {
-			"url": "http://pizzatie.com/menu",
-		  "verb": "GET",
-	    "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {}, 
+        "request": {
+            "url": "http://pizzatie.com/menu",
+          "verb": "GET",
+        "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -301,41 +301,41 @@ In this task the data required to populate the pizza menu is retrieved and retur
 
 ```json
 {
-	"menu": {
-		"flavors": [
-			{
-				"img": "dummyPath/pepperoni.png",
-				"flavor": "pepperoni",
-				"id": "a985d2f2756b79bf7f0ad4ec4400da940d88bdc5",
-				"ingredients": ["pepperoni", "mussarela", "molho de tomate"],
-				"description": "Uma das pizzas mais populares do país.",
-				"sizes": [
-					{ "tag": "pequeno", "price": 12.75, "dim": "25 cm" },
-					{ "tag": "médio", "price": 17.98, "dim": "30 cm" },
-					{ "tag": "grande", "price": 23.42, "dim": "35 cm" },
-					{ "tag": "família", "price": 28.85, "dim": "40 cm" },
-					{ "tag": "grande família", "price": 40.21, "dim": "45 cm" }
-				],
-				"edges": ["chocolate", "cheddar", "catupiry"]
-			},
-			{
-				"img": "dummyPath/extracheese.png",
-				"flavor": "extra cheese",
-				"id": "41e460faa981f5dca1fb7b59b764b3ba59959071",
-				"ingredients": ["mussarela", "orégano", "molho de pizza"],
-				"description": "Uma pizza 100% de mussarela.",
-				"sizes": [
-					{ "tag": "pequeno", "price": 11.45, "dim": "25 cm" },
-					{ "tag": "médio", "price": 16.78, "dim": "30 cm" },
-					{ "tag": "grande", "price": 21.52, "dim": "35 cm" },
-					{ "tag": "família", "price": 27.53, "dim": "40 cm" },
-					{ "tag": "grande família", "price": 38.56, "dim": "45 cm" }
-				],
-				"edges": ["chocolate", "cheddar", "catupiry"]
-			},
-			...
-		]
-	}
+    "menu": {
+        "flavors": [
+            {
+                "img": "dummyPath/pepperoni.png",
+                "flavor": "pepperoni",
+                "id": "a985d2f2756b79bf7f0ad4ec4400da940d88bdc5",
+                "ingredients": ["pepperoni", "mussarela", "molho de tomate"],
+                "description": "Uma das pizzas mais populares do país.",
+                "sizes": [
+                    { "tag": "pequeno", "price": 12.75, "dim": "25 cm" },
+                    { "tag": "médio", "price": 17.98, "dim": "30 cm" },
+                    { "tag": "grande", "price": 23.42, "dim": "35 cm" },
+                    { "tag": "família", "price": 28.85, "dim": "40 cm" },
+                    { "tag": "grande família", "price": 40.21, "dim": "45 cm" }
+                ],
+                "edges": ["chocolate", "cheddar", "catupiry"]
+            },
+            {
+                "img": "dummyPath/extracheese.png",
+                "flavor": "extra cheese",
+                "id": "41e460faa981f5dca1fb7b59b764b3ba59959071",
+                "ingredients": ["mussarela", "orégano", "molho de pizza"],
+                "description": "Uma pizza 100% de mussarela.",
+                "sizes": [
+                    { "tag": "pequeno", "price": 11.45, "dim": "25 cm" },
+                    { "tag": "médio", "price": 16.78, "dim": "30 cm" },
+                    { "tag": "grande", "price": 21.52, "dim": "35 cm" },
+                    { "tag": "família", "price": 27.53, "dim": "40 cm" },
+                    { "tag": "grande família", "price": 38.56, "dim": "45 cm" }
+                ],
+                "edges": ["chocolate", "cheddar", "catupiry"]
+            },
+            ...
+        ]
+    }
 }
 ```
 
@@ -347,25 +347,25 @@ In this task occurs the persistence of the order in the system. The task receive
 
 ```json
 {
-	"parameters": {
-		"input": {
-			"order": {
-				"customer": { "id": "6fc5e9ff-e7e0-422a-b941-9e225e3fcddf" },
-				"flavors": [
-					{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-					"price": 12.75, "comment": null },
-					{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-					"price": 27.53, "comment": "Por favor, capriche no orégano." }
-				],
-				"total_price": 53.03
-			} 
-		},
-		"request": {
-			 "url": "http://pizzatie.com/orders",
-		   "verb": "POST",
-	     "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {
+            "order": {
+                "customer": { "id": "6fc5e9ff-e7e0-422a-b941-9e225e3fcddf" },
+                "flavors": [
+                    { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+                    "price": 12.75, "comment": null },
+                    { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+                    "price": 27.53, "comment": "Por favor, capriche no orégano." }
+                ],
+                "total_price": 53.03
+            } 
+        },
+        "request": {
+             "url": "http://pizzatie.com/orders",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -373,25 +373,25 @@ In this task occurs the persistence of the order in the system. The task receive
 
 ```json
 {
-	"order": {
-		"id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		"customer": {
-			"name": "Dummy Customer",
-			"phone": "(459) 1133909"
-		},
-		"address": {
-			"district": "Dummy District",
-			"street": "Dummy street",
-			"number": "4152"
-		},
-		"flavors": [
-			{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-			"price": 12.75, "comment": null },
-			{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-			"price": 27.53, "comment": "Por favor, capriche no orégano." }
-		],
-		"total_price": 53.03
-	}
+    "order": {
+        "id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+        "customer": {
+            "name": "Dummy Customer",
+            "phone": "(459) 1133909"
+        },
+        "address": {
+            "district": "Dummy District",
+            "street": "Dummy street",
+            "number": "4152"
+        },
+        "flavors": [
+            { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+            "price": 12.75, "comment": null },
+            { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+            "price": 27.53, "comment": "Por favor, capriche no orégano." }
+        ],
+        "total_price": 53.03
+    }
 }
 ```
 
@@ -403,25 +403,25 @@ The BAG ORDER node is a systemTaskNode responsible for store the order data in t
 
 ```json
 {
-	"order": {
-		"id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		"customer": {
-			"name": "Dummy Customer",
-			"phone": "(459) 1133909"
-		},
-		"address": {
-			"district": "Dummy District",
-			"street": "Dummy street",
-			"number": "4152"
-		},
-		"flavors": [
-			{ "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
-			"price": 12.75, "comment": null },
-			{ "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
-			"price": 27.53, "comment": "Por favor, capriche no orégano." }
-		],
-		"total_price": 53.03
-	}
+    "order": {
+        "id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+        "customer": {
+            "name": "Dummy Customer",
+            "phone": "(459) 1133909"
+        },
+        "address": {
+            "district": "Dummy District",
+            "street": "Dummy street",
+            "number": "4152"
+        },
+        "flavors": [
+            { "flavor": "pepperoni", "edge": "catupiry", "size": "pequeno", "qty": 2, 
+            "price": 12.75, "comment": null },
+            { "flavor": "extra cheese", "edge": "chocolate", "size": "família", "qty": 1, 
+            "price": 27.53, "comment": "Por favor, capriche no orégano." }
+        ],
+        "total_price": 53.03
+    }
 }
 ```
 
@@ -435,18 +435,18 @@ In this task, the order is deleted, since the customer has chosen to cancel his 
 
 ```json
 {
-	"parameters": {
-		"input": {
-			"order": {
-				"id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17"
-			}
-		},
-		"request": {
-			 "url": "http://pizzatie.com/delete-order/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		   "verb": "POST",
-	     "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {
+            "order": {
+                "id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17"
+            }
+        },
+        "request": {
+             "url": "http://pizzatie.com/delete-order/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -460,18 +460,18 @@ In this task the system, with the order ID in hand, does the payment of the cust
 
 ```json
 {
-	"parameters": {
-		"input": {
-			"order": {
-				"id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17"
-			}
-		},
-		"request": {
-			 "url": "http://pizzatie.com/perform-order-payment/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		   "verb": "POST",
-	     "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {
+            "order": {
+                "id": "627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17"
+            }
+        },
+        "request": {
+             "url": "http://pizzatie.com/perform-order-payment/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -479,7 +479,7 @@ In this task the system, with the order ID in hand, does the payment of the cust
 
 ```json
 {
-	"payment_status": true
+    "payment_status": true
 }
 ```
 
@@ -491,14 +491,14 @@ In this task, the system updates the status of the order after its payment. This
 
 ```json
 {
-	"parameters": {
-		"input": {},
-		"request": {
-			 "url": "http://pizzatie.com/set-order-pending/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		   "verb": "POST",
-	     "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {},
+        "request": {
+             "url": "http://pizzatie.com/set-order-pending/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -512,14 +512,14 @@ In this task, the system updates the status of the order after its preparation. 
 
 ```json
 {
-	"parameters": {
-		"input": {},
-		"request": {
-			 "url": "http://pizzatie.com/set-order-prepared/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		   "verb": "POST",
-	     "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {},
+        "request": {
+             "url": "http://pizzatie.com/set-order-prepared/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -533,14 +533,14 @@ In this task, the system calculates the delivery time. For this, the task needs 
 
 ```json
 { 
-	"parameters": {
-		"input": {}, 
-		"request": {
-			"url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/delivery-time",
-		  "verb": "GET",
-	    "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {}, 
+        "request": {
+            "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/delivery-time",
+          "verb": "GET",
+        "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -548,11 +548,11 @@ In this task, the system calculates the delivery time. For this, the task needs 
 
 ```json
 {
-	"delivery_time": {
-		"time": 63,
-		"exceeded": true,
-		"refund_value": 2.83
-	}
+    "delivery_time": {
+        "time": 63,
+        "exceeded": true,
+        "refund_value": 2.83
+    }
 }
 ```
 
@@ -566,13 +566,13 @@ In this task, the data related to the delivery time is added to the bag of the p
 
 ```json
 {
-	"order": {
-		"delivery_time": {
-			"time": 63,
-			"exceeded": true,
-			"refund_value": 2.83
-		}
-	}
+    "order": {
+        "delivery_time": {
+            "time": 63,
+            "exceeded": true,
+            "refund_value": 2.83
+        }
+    }
 }
 ```
 
@@ -586,18 +586,18 @@ In this task the pizzeria, based on the delivery’s time data, refunds the cust
 
 ```json
 {
-	"parameters": {
-		"input": {
-			"order": {
-				"refund_value": 2.83
-			}
-		},
-		"request": {
-			 "url": "http://pizzatie.com/perform-order-refund/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		   "verb": "POST",
-	     "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {
+            "order": {
+                "refund_value": 2.83
+            }
+        },
+        "request": {
+             "url": "http://pizzatie.com/perform-order-refund/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -605,8 +605,8 @@ In this task the pizzeria, based on the delivery’s time data, refunds the cust
 
 ```json
 {
-	"refund_ok": true,
-	"voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
+    "refund_ok": true,
+    "voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
 }
 ```
 
@@ -618,14 +618,14 @@ In this task, the system updates the status of the order after the customer rece
 
 ```json
 {
-	"parameters": {
-		"input": {},
-		"request": {
-			 "url": "http://pizzatie.com/set-order-finalized/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
-		   "verb": "POST",
-	     "headers": { "ContentType": "application/json" }
-		}
-	}
+    "parameters": {
+        "input": {},
+        "request": {
+             "url": "http://pizzatie.com/set-order-finalized/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
 }
 ```
 
@@ -639,17 +639,17 @@ In this task, the system updates the status of the order after the customer rece
 
 ```json
 {
-	"parameters": {
-		"input": {
-			"refund_ok": true,
-			"voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
-		},
-		"request": {
-			 "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/refunding",
-		   "verb": "PATCH",
-	     "headers": { "ContentType": "application/json" },
-		}
-	}
+    "parameters": {
+        "input": {
+            "refund_ok": true,
+            "voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
+        },
+        "request": {
+             "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/refunding",
+           "verb": "PATCH",
+         "headers": { "ContentType": "application/json" },
+        }
+    }
 }
 ```
 
@@ -657,8 +657,8 @@ In this task, the system updates the status of the order after the customer rece
 
 ```json
 {
-	"refund_ok": true,
-	"voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
+    "refund_ok": true,
+    "voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
 }
 ```
 
@@ -670,18 +670,18 @@ In this task, the system adds the customer’s rating of the service to the resp
 
 ```json
 {
-	"parameters": {
-		"input": {
-			"rate": 4,
-			"comment": "A entrega demorou um pouco, mas o cheiro estava tão bom quando chegou aqui
-			que eu não pude resistir! :)" 
-		},
-		"request": {
-			 "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/rating",
-		   "verb": "PATCH",
-	     "headers": { "ContentType": "application/json" },
-		}
-	}
+    "parameters": {
+        "input": {
+            "rate": 4,
+            "comment": "A entrega demorou um pouco, mas o cheiro estava tão bom quando chegou aqui
+            que eu não pude resistir! :)" 
+        },
+        "request": {
+             "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/rating",
+           "verb": "PATCH",
+         "headers": { "ContentType": "application/json" },
+        }
+    }
 }
 ```
 
@@ -701,7 +701,7 @@ This startNode needs to feed the process with the necessary information for its 
 
 ```json
 {
-	"customer": { "id": "6fc5e9ff-e7e0-422a-b941-9e225e3fcddf" }
+    "customer": { "id": "6fc5e9ff-e7e0-422a-b941-9e225e3fcddf" }
 }
 ```
 
