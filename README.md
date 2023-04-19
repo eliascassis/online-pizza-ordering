@@ -289,7 +289,7 @@ In this task the data required to populate the pizza menu is retrieved and retur
     "parameters": {
         "input": {}, 
         "request": {
-            "url": "http://pizzatie.com/menu",
+          "url": "http://pizzatie.com/menu",
           "verb": "GET",
         "headers": { "ContentType": "application/json" }
         }
@@ -361,7 +361,7 @@ In this task occurs the persistence of the order in the system. The task receive
             } 
         },
         "request": {
-             "url": "http://pizzatie.com/orders",
+           "url": "http://pizzatie.com/orders",
            "verb": "POST",
          "headers": { "ContentType": "application/json" }
         }
@@ -442,7 +442,7 @@ In this task, the order is deleted, since the customer has chosen to cancel his 
             }
         },
         "request": {
-             "url": "http://pizzatie.com/delete-order/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "url": "http://pizzatie.com/delete-order/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
            "verb": "POST",
          "headers": { "ContentType": "application/json" }
         }
@@ -467,7 +467,7 @@ In this task the system, with the order ID in hand, does the payment of the cust
             }
         },
         "request": {
-             "url": "http://pizzatie.com/perform-order-payment/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "url": "http://pizzatie.com/perform-order-payment/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
            "verb": "POST",
          "headers": { "ContentType": "application/json" }
         }
@@ -494,7 +494,7 @@ In this task, the system updates the status of the order after its payment. This
     "parameters": {
         "input": {},
         "request": {
-             "url": "http://pizzatie.com/set-order-pending/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "url": "http://pizzatie.com/set-order-pending/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
            "verb": "POST",
          "headers": { "ContentType": "application/json" }
         }
@@ -515,7 +515,7 @@ In this task, the system updates the status of the order after its preparation. 
     "parameters": {
         "input": {},
         "request": {
-             "url": "http://pizzatie.com/set-order-prepared/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "url": "http://pizzatie.com/set-order-prepared/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
            "verb": "POST",
          "headers": { "ContentType": "application/json" }
         }
@@ -536,7 +536,7 @@ In this task, the system calculates the delivery time. For this, the task needs 
     "parameters": {
         "input": {}, 
         "request": {
-            "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/delivery-time",
+          "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/delivery-time",
           "verb": "GET",
         "headers": { "ContentType": "application/json" }
         }
@@ -593,7 +593,7 @@ In this task the pizzeria, based on the delivery’s time data, refunds the cust
             }
         },
         "request": {
-             "url": "http://pizzatie.com/perform-order-refund/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "url": "http://pizzatie.com/perform-order-refund/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
            "verb": "POST",
          "headers": { "ContentType": "application/json" }
         }
@@ -621,7 +621,7 @@ In this task, the system updates the status of the order after the customer rece
     "parameters": {
         "input": {},
         "request": {
-             "url": "http://pizzatie.com/set-order-finalized/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "url": "http://pizzatie.com/set-order-finalized/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
            "verb": "POST",
          "headers": { "ContentType": "application/json" }
         }
@@ -645,7 +645,7 @@ In this task, the system updates the status of the order after the customer rece
             "voucher": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII="
         },
         "request": {
-             "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/refunding",
+           "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/refunding",
            "verb": "PATCH",
          "headers": { "ContentType": "application/json" },
         }
@@ -677,7 +677,7 @@ In this task, the system adds the customer’s rating of the service to the resp
             que eu não pude resistir! :)" 
         },
         "request": {
-             "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/rating",
+           "url": "http://pizzatie.com/orders/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17/rating",
            "verb": "PATCH",
          "headers": { "ContentType": "application/json" },
         }
