@@ -134,7 +134,7 @@ Based on the result of the operations related to the order’s payment, this tas
 
 In this task occurs the preparation of the order by the pizzeria. This task needs the flavors of pizza choosed by the customer to be presented and does not require output. 
 
-**********************************Interface description:********************************** the interface allows the restaurant to mark the flavors of the order that have been prepared and provides a button to finalize the preparation of the order as a whole**********************************.**********************************
+**********************************Interface description:********************************** the interface allows the restaurant to mark the flavors of the order that have been prepared and provides a button to finalize the preparation of the order as a whole.
 
 **********Input:********** Order data less the information related to the customer address and prices of the order
 
