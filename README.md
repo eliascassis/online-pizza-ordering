@@ -132,7 +132,7 @@ Based on the result of the operations related to the order’s payment, this tas
 
 ### PREPARE ORDER
 
-In this task occurs the preparation of the order by the pizzeria. This task needs the flavors of pizza choosed by the customer to be presented and does not require output. 
+In this task occurs the preparation of the order by the pizzeria. This task needs the flavors of pizza choosed by the customer to be presented (input) and the preparation data as output. 
 
 **********************************Interface description:********************************** the interface allows the restaurant to mark the flavors of the order that have been prepared and provides a button to finalize the preparation of the order as a whole.
 
@@ -154,11 +154,17 @@ In this task occurs the preparation of the order by the pizzeria. This task need
 }
 ```
 
-**************Output:************** not required
+**************Output:**************
+
+```json
+{
+    "preparation_date": "Wed Mar 25 2015 07:57:00 GMT-0300 (Horário Padrão de Brasília)"
+}
+```
 
 ### DISPATCH DELIVERY
 
-In this task the deliveryman dispatches the order to the customer. Once the payment is made before the order delivery, this task does not require the price of the order. Like the PREPARE ORDER task, this one does not require output.
+In this task the deliveryman dispatches the order to the customer. Once the payment is made before the order delivery, this task does not require the price of the order. The output is the date in which the delivery was made.
 
 **********************************************Interface description:********************************************** the interface shows up just the necessary information of the order to deliver and allows the deliveryman to inform, through a button, that the order was delivered.
 
@@ -184,7 +190,13 @@ In this task the deliveryman dispatches the order to the customer. Once the paym
 }
 ```
 
-****************Output:**************** not required
+****************Output:**************** 
+
+```json
+{
+    "delivery_date": "Wed Mar 25 2015 09:00:00 GMT-0300 (Horário Padrão de Brasília)"
+}
+```
 
 ### ASK REFUND
 
@@ -506,14 +518,39 @@ In this task, the system updates the status of the order after its payment. This
 
 ### UPDATE ORDER (READY)
 
-In this task, the system updates the status of the order after its preparation. This task needs only of the order ID to update the status and does not require output.
+In this task, the system updates the status of the order after its preparation. This task needs the order ID to update its status and does not require output. The date of the order's preparation by the pizzeria is required as input as well. 
 
 **************Request:************** 
 
 ```json
 {
     "parameters": {
-        "input": {},
+        "input": {
+            "preparation_date": "Wed Mar 25 2015 07:57:00 GMT-0300 (Horário Padrão de Brasília)"
+        },
+        "request": {
+           "url": "http://pizzatie.com/set-order-prepared/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
+           "verb": "POST",
+         "headers": { "ContentType": "application/json" }
+        }
+    }
+}
+```
+
+**************Output:************** not required
+
+### UPDATE ORDER (delivered)
+
+In this task, the system updates the status of the order after its delivery. This task needs the order ID to update its status and does not require output. The date of the order's preparation by the pizzeria is required as input as well. 
+
+**************Request:************** 
+
+```json
+{
+    "parameters": {
+        "input": {
+            "delivery_date": "Wed Mar 25 2015 09:00:00 GMT-0300 (Horário Padrão de Brasília)"
+        },
         "request": {
            "url": "http://pizzatie.com/set-order-prepared/627127c1e1be821dd6f0553c940a96ef3ecb8f593f09c535d484847d806e3f17",
            "verb": "POST",
